@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
@@ -5,14 +6,13 @@ body {
   padding: 0;
 }
 
-/* Main container */
+/* Main Container */
 .timeline-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  text-align: center;
   padding: 20px;
 }
 
@@ -26,7 +26,7 @@ body {
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  max-width: 90%; /* Adjusted to be responsive */
+  max-width: 90%;
   width: 100%;
   margin-bottom: 20px;
   text-align: center;
@@ -34,8 +34,8 @@ body {
 }
 
 .birthday-message img {
-  max-width: 100%; /* Ensure image fits within its container */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  height: auto;
   border-radius: 50%;
   margin-bottom: 20px;
   border: 5px solid #ffcccb;
@@ -48,6 +48,7 @@ body {
   margin-bottom: 10px;
 }
 
+/* Surprise Button */
 .surprise-button {
   background-color: #ff6b6b;
   color: white;
@@ -70,7 +71,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  max-width: 90%; /* Adjusted for mobile responsiveness */
+  max-width: 90%;
   width: 100%;
   margin: 20px 0;
   transition: transform 0.4s ease-in-out;
@@ -81,6 +82,7 @@ body {
   transform: translateY(-5px);
 }
 
+/* Memory Details */
 .memory-details {
   display: flex;
   flex-direction: column;
@@ -89,15 +91,14 @@ body {
   animation: fadeIn 1s ease;
 }
 
-/* Enforcing consistent image size */
 .memory-image {
-  width: 100%; /* Make the image responsive */
-  max-width: 600px; /* Maximum width for larger screens */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   border-radius: 15px;
   margin-bottom: 10px;
   border: 3px solid #ffcccb;
-  object-fit: cover; /* Ensure images maintain aspect ratio while filling the container */
+  object-fit: cover;
 }
 
 .memory-details p {
@@ -105,14 +106,16 @@ body {
   color: #333;
 }
 
+/* Headings */
 h2 {
   font-size: 1.8em;
   color: #ff6b6b;
 }
 
+/* Button Styles */
 .buttons {
   display: flex;
-  flex-direction: column; /* Stack buttons vertically on mobile */
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   margin-top: 10px;
@@ -127,45 +130,61 @@ button {
   font-size: 1.1em;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin: 5px 0; /* Space between buttons */
-  width: 100%; /* Make buttons full width */
+  margin: 5px 0;
+  width: 100%;
 }
 
 button:hover {
   background-color: #ff9999;
 }
 
-/* Fade-in animation */
+/* Fade-in Animation */
 @keyframes fadeIn {
   from {
-    opacity: 0;
+      opacity: 0;
   }
   to {
-    opacity: 1;
+      opacity: 1;
   }
 }
 
-/* Responsive design */
+/* Responsive Design */
 @media (max-width: 600px) {
   .birthday-message {
-    padding: 20px; /* Adjust padding for smaller screens */
+      padding: 20px;
   }
 
   h1 {
-    font-size: 1.8em; /* Adjust heading size */
+      font-size: 1.8em;
   }
 
   h2 {
-    font-size: 1.6em; /* Adjust heading size */
+      font-size: 1.6em;
   }
 
   .memory-image {
-    width: 100%; /* Full width for smaller screens */
-    height: auto; /* Adjust height dynamically based on aspect ratio */
+      width: 100%;
+      height: auto;
   }
 
   button {
-    padding: 10px; /* Adjust button size */
-    font-size: 1em; /* Adjust button text size */
+      padding: 10px;
+      font-size: 1em;
   }
+}
+
+/* Special Styles for the Last Memory */
+.last-memory {
+  background: #ffe0e0;
+  border: 2px solid #ff6b6b;
+}
+
+/* Birthday Song */
+.birthday-song {
+  display: none;
+}
+
+/* Show the birthday song when the last memory is reached */
+.show-birthday-song {
+  display: block;
 }
