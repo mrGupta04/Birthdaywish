@@ -90,7 +90,7 @@ function Timeline() {
                     </button>
                 </div>
             ) : (
-                <div>
+                <div className="memory-container">
                     {showConfetti && <Confetti />}
                     <div className="memory-card">
                         <h2>{memories[activeMemoryIndex].date}</h2>
