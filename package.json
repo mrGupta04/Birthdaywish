@@ -2,7 +2,11 @@
   "name": "advanced-memory-timeline",
   "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
   "homepage": "https://mrGupta04.github.io/Birthdaywish",
+=======
+  "homepage": "https://mrGupta04.github.io/my-birthday-app",
+>>>>>>> 121231e (Update project files for deployment)
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -19,8 +23,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+<<<<<<< HEAD
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+=======
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build"  
+>>>>>>> 121231e (Update project files for deployment)
   },
   "eslintConfig": {
     "extends": [

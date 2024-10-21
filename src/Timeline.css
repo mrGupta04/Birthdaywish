@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /* General Styles */
+=======
+>>>>>>> 121231e (Update project files for deployment)
 body {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
@@ -6,13 +9,21 @@ body {
   padding: 0;
 }
 
+<<<<<<< HEAD
 /* Main Container */
+=======
+/* Main container */
+>>>>>>> 121231e (Update project files for deployment)
 .timeline-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+<<<<<<< HEAD
+=======
+  text-align: center;
+>>>>>>> 121231e (Update project files for deployment)
   padding: 20px;
 }
 
@@ -26,7 +37,11 @@ body {
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+<<<<<<< HEAD
   max-width: 90%;
+=======
+  max-width: 650px;
+>>>>>>> 121231e (Update project files for deployment)
   width: 100%;
   margin-bottom: 20px;
   text-align: center;
@@ -34,8 +49,13 @@ body {
 }
 
 .birthday-message img {
+<<<<<<< HEAD
   max-width: 100%;
   height: auto;
+=======
+  max-width: 650px;
+  height: px;
+>>>>>>> 121231e (Update project files for deployment)
   border-radius: 50%;
   margin-bottom: 20px;
   border: 5px solid #ffcccb;
@@ -48,7 +68,10 @@ body {
   margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 /* Surprise Button */
+=======
+>>>>>>> 121231e (Update project files for deployment)
 .surprise-button {
   background-color: #ff6b6b;
   color: white;
@@ -71,7 +94,11 @@ body {
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   padding: 20px;
+<<<<<<< HEAD
   max-width: 90%;
+=======
+  max-width: 680px;
+>>>>>>> 121231e (Update project files for deployment)
   width: 100%;
   margin: 20px 0;
   transition: transform 0.4s ease-in-out;
@@ -82,7 +109,10 @@ body {
   transform: translateY(-5px);
 }
 
+<<<<<<< HEAD
 /* Memory Details */
+=======
+>>>>>>> 121231e (Update project files for deployment)
 .memory-details {
   display: flex;
   flex-direction: column;
@@ -91,6 +121,7 @@ body {
   animation: fadeIn 1s ease;
 }
 
+<<<<<<< HEAD
 .memory-image {
   width: 100%;
   max-width: 600px;
@@ -99,6 +130,16 @@ body {
   margin-bottom: 10px;
   border: 3px solid #ffcccb;
   object-fit: cover;
+=======
+/* Enforcing consistent image size */
+.memory-image {
+  width: 600px; /* Consistent width for all images */
+  height: 800px; /* Consistent height for all images */
+  border-radius: 15px;
+  margin-bottom: 10px;
+  border: 3px solid #ffcccb;
+  object-fit: cover; /* Ensure images maintain aspect ratio while filling the container */
+>>>>>>> 121231e (Update project files for deployment)
 }
 
 .memory-details p {
@@ -106,17 +147,26 @@ body {
   color: #333;
 }
 
+<<<<<<< HEAD
 /* Headings */
+=======
+>>>>>>> 121231e (Update project files for deployment)
 h2 {
   font-size: 1.8em;
   color: #ff6b6b;
 }
 
+<<<<<<< HEAD
 /* Button Styles */
 .buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
+=======
+.buttons {
+  display: flex;
+  justify-content: space-around;
+>>>>>>> 121231e (Update project files for deployment)
   width: 100%;
   margin-top: 10px;
 }
@@ -130,14 +180,18 @@ button {
   font-size: 1.1em;
   cursor: pointer;
   transition: background-color 0.3s ease;
+<<<<<<< HEAD
   margin: 5px 0;
   width: 100%;
+=======
+>>>>>>> 121231e (Update project files for deployment)
 }
 
 button:hover {
   background-color: #ff9999;
 }
 
+<<<<<<< HEAD
 /* Fade-in Animation */
 @keyframes fadeIn {
   from {
@@ -188,3 +242,30 @@ button:hover {
 .show-birthday-song {
   display: block;
 }
+=======
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .memory-card {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  .memory-image {
+    width: 100%; /* Make the image take up full width on smaller screens */
+    height: auto; /* Adjust the height dynamically based on aspect ratio */
+  }
+}
+>>>>>>> 121231e (Update project files for deployment)
